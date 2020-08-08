@@ -182,7 +182,6 @@ class Villager(Person):
     def gather(self):
         g_food_loc = greenfood.g_food_loc
         if g_food in self.inventory:
-            # print(self.inventory)
             self.go_gather = False
             self.go_base()
         elif self.go_gather:
@@ -193,8 +192,6 @@ class Villager(Person):
             try:
                 way_lenght_min = min(way_lenght_villager)
                 way_lenght_index = way_lenght_villager.index(way_lenght_min)
-                # print(way_lenght_villager)
-                # print('{}. {}   '.format(way_lenght_index, way_lenght_min) + str(self.x) + '. ' + str(self.y))
                 short_x = int(g_food_loc[way_lenght_index][0]) - 1
                 short_y = int(g_food_loc[way_lenght_index][1]) - 1
                 self.go(self.vel, short_x, short_y)
