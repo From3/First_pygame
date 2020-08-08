@@ -11,7 +11,6 @@ def store_in(material, faction_name):
     faction_storage[0] += items
     for item in range(items):
         faction_inventory.remove(material)
-# sitam faile padaryt pilnus kiekvienos frakcijos modelius iskaitant pvz atskirus inventorius ir unit listus???
 
 
 class Faction:
