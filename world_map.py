@@ -62,7 +62,6 @@ def redraw_display():
         for vil in fac[5]:
             g_food_remove(vil, 3)
     g_food_remove(prophet, 6)
-    # prophet.wh = prophet.wh + 1 (reikia lvl up sistemos, kad vel galeciau sita paleist)
 
     first_base.draw(win, ruby[1])
     second_base.draw(win, sapphire[1])
